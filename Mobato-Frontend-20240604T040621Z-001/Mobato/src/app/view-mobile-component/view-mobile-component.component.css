@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    justify-content: space-between;
+    font-family:'Times New Roman', Times, serif
+}
+.example-card {
+    padding-top: 0%;
+    width: 47%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 2%;
+}
+h3{
+    font-family:'Times New Roman', Times, serif
+}

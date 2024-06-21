@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: -0.7%;
+    padding-left: 2%;
+    margin-top: -0.7%;
+    width: 218.8vh;
+    height: 10vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family:'Times New Roman', Times, serif
+}
+.heading{
+    margin-right: 3%;
+    cursor:pointer;
+}

@@ -1,0 +1,59 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div>
+        <label>
+            Brand:<br>
+            <input formControlName="brand" placeholder="Brand">
+        </label>
+        <div class="field" *ngIf="myForm.get('brand')!.invalid && (myForm.get('brand')!.dirty || myForm.get('brand')!.touched)">
+            <div *ngIf="myForm.get('brand')!.hasError('required')">
+                * Brand is Required.
+            </div>
+            <div *ngIf="myForm.get('brand')!.hasError('minLength')">
+                * Brand must be at least 2 characters long.
+            </div>
+        </div>
+    </div>
+    <div>
+        <label>
+            Model:<br>
+            <input formControlName="model" placeholder="Model">
+        </label>
+        <div class ="field" *ngIf="myForm.get('model')!.invalid && (myForm.get('model')!.dirty || myForm.get('model')!.touched)" >
+            * Model is Required.
+        </div>
+    </div>
+    <div>
+        <label>
+            Price:<br>
+            <input formControlName="price" placeholder="Price">
+        </label>
+        <div class ="field" *ngIf="myForm.get('price')!.invalid && (myForm.get('price')!.dirty || myForm.get('price')!.touched)" >
+            * Price is Required.
+        </div>
+    </div>
+    <div>
+        <label>
+            Skills:<br>
+            <input formControlName="color" placeholder="Color">
+        </label>
+        <div class ="field" *ngIf="myForm.get('color')!.invalid && (myForm.get('color')!.dirty || myForm.get('color')!.touched)" >
+            * Color is Required.
+        </div>
+    </div>
+    <div>
+        <label>
+            Storage:<br>
+            <input formControlName="storage" placeholder="Storage">
+        </label>
+        <div class ="field" *ngIf="myForm.get('storage')!.invalid && (myForm.get('storage')!.dirty || myForm.get('storage')!.touched)" >
+            * Storage is Required.
+        </div>
+    </div>
+    <div>
+        <label>
+            Description:<br>
+            <textarea formControlName="description"></textarea>
+        </label>
+    </div>
+    <button mat-flat-button type="sumbit" >Submit</button>
+</form>

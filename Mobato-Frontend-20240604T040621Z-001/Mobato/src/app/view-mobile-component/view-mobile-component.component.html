@@ -1,0 +1,16 @@
+<div class="container">
+    @for(mob of mobileList;track mob){
+    <mat-card class="example-card">
+        <mat-card-header>
+        <mat-card-title id="title"><h3>Brand: {{mob.brand}}</h3></mat-card-title>
+        <mat-card-subtitle>Model: {{mob.model}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+        <p>Price: {{mob.price}}</p>
+        <p>Color: {{mob.color}}</p>
+        <p>Storage: {{mob.storage}}</p>
+        <p>Description: {{mob.description}}</p>
+        </mat-card-content>
+    </mat-card>
+}
+</div>
